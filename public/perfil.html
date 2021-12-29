@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Perfil</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+
+</head>
+<body onload="mostrarPerfil()"> <!-- Muestra los datos del user registrados en la BBDD cuando accede a la página-->
+    <header>
+        <!-- Pantalla tras el inicio de sesión, el usuario puede ver su perfil y gestionarlo (modificar y eliminar)-->
+        <div id="headerIndex">
+            <div id="logo">
+                <a href="./home.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a>
+                <!--Cuando pinchas el logo te lleva a "Home"-->
+            </div>
+            <div id="menuOpciones"><!--Menú de opciones HOME, PERFIL, MATRÍCULA"-->
+                <a href="./home.html">Home</a>
+                <a href="" style=background-color:#901572;color:white;>Perfil</a>
+                <a href="./matricula.html">Matrícula</a>
+
+            </div>
+            <div id="botonesSesion"><!--BOTÓN QUE PERMITE CERRAR LA SESIÓN DEL USER"-->
+                <a onclick="cerrarSesion()">Cerrar sesión</a>
+            </div>
+        </div>
+       
+
+    </header>
+    <main>
+        <div id="mainPerfil">
+            <div id="datosUsuario"></div><!--se muestran los datos guardados en la bbdd del usuario-->
+            <div id="datosModificar"><!--el usuario puede modificar datos: CORREO, TELÉFONO Y CONTRASEÑA-->
+            <div id="datosDeContacto">
+                <ul>
+                    <li><b>MODIFICAR DATOS</b></li><br>
+                    <label for="uname">Correo electrónico: </label>
+                    <li><input type="text" id="correoMod" ></li>
+                    <label for="uname">Número de teléfono: </label>
+                    <li><input type="text" id="numMod"></li>
+                    <li><label for="uname">Contraseña:</label></li>
+                    <li><input class="form-control" type="password" name="password" id="passwordMod"></li>
+                </ul>
+            </div>
+            <div id="botonModif">
+                <a onclick="modificarPerfil()">MODIFICAR</a>
+                <p id="mensajeMod"></p>
+            </div>
+            
+        </div>
+        <!--el usuario puede eliminar su perfil siempre y cuando no esté matriculado de ninguna asignatura-->
+        <div id="eliminarPerfil">
+            <ul>
+                <li><p><b>ELIMINAR PERFIL</b></p></li>
+                <li><p>Antes de eliminar el perfil, debes de estar desmatricuada/o de todas las asignaturas.</p></li>
+                <li><p>¡Recuerda que este paso es irreversible!</p></li>
+            </ul>
+            <div id="botonElim">
+                <a onclick="eliminarPerfil()">ELIMINAR</a>
+                <p id="mensajeElim"></p>
+            </div>
+           
+        </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div id=shareNDfollow>
+                
+            <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4>
+            <div id=divImg>
+                <div id=imgSF>
+                    <img src="img/fb2.png" alt="Facebook log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/insta.png" alt="Instagram log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/tw2.png" alt="Twitter log">
+                    </div>
+            </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>

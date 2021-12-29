@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Asignaturas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+</head>
+<body onload="mostrarAsignaturas()"> <!--Muestra todas las asignaturas para el usuario que no está registrado-->
+    <header>
+        <!-- Pantalla antes del inicio de sesión, los usuarios no registrados pueden ver que asignaturas se ofrece-->
+        <div id="headerIndex"> 
+            <div id="logo"><!--Logo-->
+                <a href="./index.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a> 
+                <!--Cuando pinchas el logo te lleva a "Index"-->  
+            </div>
+            <div id="botonesSesion">
+                <div  >
+                 <a href="./registro.html">REGÍSTRATE</a> <!--Botón que dirige a la página para  crear un neuvo usuario-->
+                </div>
+                <div>
+                 <a href="/iniciosesion.html">INICIA SESIÓN</a><!--Botón que dirige a la página para  iniciar sesión-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Se muestran las tarjetas de las asignaturas guardadas en la BBDD-->
+        <div id="mainAsignaturas">
+            <div id="tituloAsignaturas">
+                <h4><b>¡Aquí te mostramos las asignaturas que ofrecemos! Para matricularte 
+                    <a href="/iniciosesion.html">INICIA SESIÓN</a>!.</b>
+                </p>
+            </div>
+            <div id="tablonAsignaturas" ></div>
+        </div>
+    </main>
+
+    <footer>
+        <div id=shareNDfollow>
+               <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4> 
+            <div id=divImg>
+                <div id=imgSF>
+                    <img src="img/fb2.png" alt="Facebook log">
+                </div>
+                <div id=imgSF>
+                    <img src="/img/insta.png" alt="Instagram log">
+                </div>
+                <div id=imgSF>
+                    <img src="/img/tw2.png" alt="Twitter log">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>

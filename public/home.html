@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+
+</head>
+<body onload="mostrarAsignaturasMatricula()"> <!-- Llamamos a la función para que muestre el listado de asignaturas que está  matriculado el user, si no tiene ninguna aparece mensaje informativo-->
+    <!-- Pantalla tras el inicio de sesión es la pantalla "Home" donde el usuario puede ver en qué asignaturas está matriculado-->
+    <header>
+        <div id="headerIndex">
+            <div id="logo">
+                <a href="./home.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a>   
+            </div> <!--Cuando pinchas el logo te lleva a "Home"-->
+           
+                <div id="menuOpciones"><!--Menú de opciones HOME, PERFIL, MATRÍCULA"-->
+                    <a href="" style=background-color:#901572;color:white;>Home</a>
+                    <a href="./perfil.html">Perfil</a>
+                    <a href="./matricula.html">Matrícula</a>
+                </div>
+            <div id="botonesSesion"><!--BOTÓN QUE PERMITE CERRAR LA SESIÓN DEL USER"-->
+                <a onclick="cerrarSesion()">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main><!--Se muestran las asignaturas que el user está matriculado y se puede desmatricular"-->
+        <div id="tablonMatriculadas" ></div>
+    </main>
+
+    <footer>
+        <div id=shareNDfollow>
+             <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4>   
+        
+            <div id=divImg>
+                <div id=imgSF>
+                    <img src="img/fb2.png" alt="Facebook log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/insta.png" alt="Instagram log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/tw2.png" alt="Twitter log">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="./index.js"></script>
+</html>
+
+

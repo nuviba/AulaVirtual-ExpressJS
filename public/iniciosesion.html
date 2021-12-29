@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+
+</head>
+<body>
+     <!-- Pantalla antes del inicio de sesión, inicio sesión usuario-->
+  <header>
+    <div id="headerIndex">
+        <div id="logo"><!--Logo-->
+            <a href="./index.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a>
+            <!--Cuando pinchas el logo te lleva a "Index"-->            
+        </div>
+        <div id="botonesSesion">
+         <div>
+             <!--Botón que dirige a la página para  crear un nuevo usuario-->
+             <p>¿Aun no estás registrado? <a href="./registro.html">REGÍSTRATE</a></p>
+            
+         </div>
+        </div>
+    </div>
+   
+
+</header>
+  <main>
+      <!--Campos user+psw para el inicio de sesión-->
+    <div id="inicioSesion">
+        <h2>INTRODUCE TUS CREDENCIALES PARA ACCEDER AL CONTENIDO</h2>
+        <input type="text" placeholder="Usuario" id="userL">
+        <input type="password" id="pswL"placeholder="Contraseña">
+        <a onclick="logUser()" id="botonContraseña">ACCEDER</a>
+        <p id="errorLogin">
+            ¿Aún no te has registrado? <a href="./registro.html"id="enlaceRegistro">Regístrate aquí</a>
+        </p>
+       
+    </div>
+  </main>
+  <footer>
+    <div id=shareNDfollow>
+            
+        <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4>
+       
+        <div id=divImg>
+            <div id=imgSF>
+                <img src="img/fb2.png" alt="Facebook log">
+                </div>
+                <div id=imgSF>
+                <img src="/img/insta.png" alt="Instagram log">
+                </div>
+                <div id=imgSF>
+                <img src="/img/tw2.png" alt="Twitter log">
+                </div>
+        </div>
+</footer>
+    
+</body>
+<script src="./index.js"></script>
+</html>

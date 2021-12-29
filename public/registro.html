@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+
+</head>
+<body>
+     <!-- Pantalla antes del inicio de sesión, permite a un nuevo usuario registrarse-->
+    <header>
+        <div id="headerIndex">
+            <div id="logo"><!--Logo-->
+                <a href="./index.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a>
+                <!--Cuando pinchas el logo te lleva a "Index"-->
+            </div>
+            <div id="botonesSesion">
+             <div>
+                 <p>¿Ya estás registrado? <a href="/iniciosesion.html">INICIA SESIÓN</a></p>
+                <!--Botón que dirige a la página para  iniciar sesión-->
+             </div>
+            </div>
+        </div>
+       
+
+    </header>
+    <main>
+        <div id="mainRegistro">
+            <div id="tituloRegistro">
+                <h2>¡Regístrate para empezar una nueva etapa!</h2>
+            </div>
+            <!--Formulario con campos a rellenar para dar de alta a un nuevo user-->
+            <div id="formularioRegistro">
+                <h2>Datos personales:</h2>
+            <p> <label for="uname">Nombre*:</label>
+                <input type="text" id="nombreR">
+            </p>
+            <p>
+                <label for="uname">Primer apellido*: </label>
+                <input type="text" id="apellido1R" >
+            </p>
+            <p> <label for="uname">Segundo apellido: </label>
+                <input type="text" id="apellido2R"></p>
+            <p>
+                <label for="uname">Fecha de nacimiento*: </label>
+                <input type="date" id="fechaNacimientoR">
+            </p>
+            <p>
+                <label for="uname">DNI*: </label>
+                <input type="text"id="dniR">
+            </p>
+            <h2>Datos de contacto:</h2>
+            <p>
+                <label for="uname">Correo electrónico*: </label>
+                <input type="text"id="correoR"> 
+            </p>
+            <p>
+                <label for="uname">Número de teléfono: </label>
+                <input type="text"id="numR">    
+            </p>
+            <h2>Cuenta:</h2>
+            <p><label for="uname">Nombre usuario*: </label>
+                <input type="text" id="nombreUserR">
+            </p>
+            <p>
+                <label for="uname">Contraseña usuario*: </label>
+                <input type="password" id="contraseñaR">    
+            </p>
+            <p>(*)Campos obligatorios</p>
+            <a id="altaBoton" onclick="registrarUsuario()"> <b>Alta</b> </a>
+            <h3 id="errorForm"></h3>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        <div id=shareNDfollow>
+                
+            <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4>
+            <div id=divImg>
+                <div id=imgSF>
+                    <img src="img/fb2.png" alt="Facebook log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/insta.png" alt="Instagram log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/tw2.png" alt="Twitter log">
+                    </div>
+            </div>
+    </footer>
+   
+   
+
+    
+</body>
+<script src="./index.js"></script>
+</html>

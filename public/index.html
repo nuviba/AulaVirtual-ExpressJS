@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA VIRTUAL</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+
+</head>
+<body>
+     <!-- Pantalla antes del inicio de sesión. Pantalla principal.-->
+    <header>
+        <div id="headerIndex">
+            <div id="logo"><!--Logo-->
+                <a href="./index.html"><img src="../img/logo.png" alt="Logo Aula Virtual"></a>
+                <!--Cuando pinchas el logo te lleva a "Index"-->  
+            </div>
+            <div id="botonesSesion">
+                <div class="botones">
+                    <a href="./registro.html">REGÍSTRATE</a><!--Botón que dirige a la página para  crear un nuevo usuario-->
+                </div>
+                <div>
+                    <a href="/iniciosesion.html">INICIA SESIÓN</a> <!--Botón que dirige a la página para  iniciar sesión-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Información al usuario sobre la finalidad de la página y como funciona-->
+        <div id="mainIndex">
+            <div id="bienvenida">
+                <h2>¡BIENVENIDA/O A AULA VIRTUAL!</h2>
+                <p>Adéntrate a este espacio virtual  para aprender las nociones más básicas de programación desde cualquier parte del mundo y en el horario que mejor se adapte a ti. <br>
+                Ofrecemos diferentes asignaturas  que te ayudarán a entender en qué consiste programar y a crear cualquier aplicación web que te puedas imaginar.
+                </p>
+                <h3> <b>La imaginación y la programación no tiene límites ¡Empieza ya con nosotros!</b></h3>
+            </div>
+            <div id="comoFunciona">
+                <h2>¿CÓMO EMPEZAR?</h2>
+                <p>Recomendamos una dedicación de 5 horas semanales por asignatura para poder asimilar los conceptos de la foma más óptima. </p>
+                <ol>
+                    <li><a href="./registro.html">Regístrate</a> e <a href="./iniciosesion.html">Inicia sesión</a></li>
+                    <li>Crea un plan, elige las <a href="./asignaturas.html"> asignaturas</a>.</li>
+                    <!--Dirige al usuario al portal asignaturas para que antes del registro pueda ver la oferta-->
+                    <li>Empieza a aprender</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="inicio"></div>    
+    </main>
+
+    <footer>
+        <!--Muestra las RRSS para que los usuario sigan-->
+        <div id=shareNDfollow> 
+            <h4><i>¡Síguenos en nuestras redes sociales para estar al día de nuestras novedades!</i></h4>
+            <div id=divImg>
+                <div id=imgSF>
+                    <img src="img/fb2.png" alt="Facebook log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/insta.png" alt="Instagram log">
+                    </div>
+                    <div id=imgSF>
+                    <img src="/img/tw2.png" alt="Twitter log">
+                    </div>
+            </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>

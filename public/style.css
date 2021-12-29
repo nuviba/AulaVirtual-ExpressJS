@@ -1,0 +1,450 @@
+body {
+  height: 100%;
+  background-color: white;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+header {
+  height: 155px;
+  width: 100%;
+  border-bottom: 1px inset rgb(139, 139, 139);
+}
+main {
+  height: max-content;
+  min-height: 510px;
+}
+footer {
+  border-top: 1px outset rgb(139, 139, 139);
+}
+
+/* HEADER NO INICIO SESIÓN */
+
+#headerIndex {
+  display: flex;
+  justify-content: space-between;
+}
+#logo img {
+  margin-top: 0%;
+  justify-content: center;
+}
+#logo img {
+  height: 150px;
+}
+#botonesSesion {
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  margin-right: 25px;
+}
+
+#botonesSesion a {
+  background-color: #901572;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  color: white;
+  margin: 15px;
+  box-shadow: 0 3px 6px #8a868629, 0 3px 6px rgba(144, 142, 142, 0.575);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#botonesSesion a:hover {
+  background-color: white;
+  color: #901572;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+
+/* HEADER SESION INICIADA
+*/
+#menuOpciones {
+  border: 2px solid #901572;
+  color: #901572;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  /* padding-left: 5%;
+  padding-right: 5%; */
+}
+#menuOpciones a:hover {
+  background-color: #971c7870;
+  border-radius: 5px;
+}
+#menuOpciones a {
+  color: #901572;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* ASIGNATURAS */
+#mainAsignaturas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+#tituloAsignaturas {
+  color: #393939;
+  align-items: center;
+  display: flex;
+  padding-left: 25%;
+}
+#tituloAsignaturas a {
+  color: #393939;
+}
+#tituloAsignaturas a:hover {
+  background-color: #901572;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#tablonAsignaturas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1%;
+}
+.card h3,
+p {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.card img {
+  height: 100px;
+  border-radius: 10px;
+}
+/* HOME */
+#noMatricula {
+  color: #393939;
+  border-radius: 10px;
+  border-radius: 10px;
+  height: 300%;
+  width: 50%;
+  margin-top: 2%;
+  margin-left: 25%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1%;
+}
+#noMatricula a {
+  color: #393939;
+}
+#tablonMatriculadas {
+  color: #393939;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+#tablonMatriculadas a {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 15px;
+  margin-left: 15%;
+  background-color: #901572;
+  cursor: pointer;
+}
+#tablonMatriculadas a:hover {
+  background-color: white;
+  color: #901572;
+}
+
+/* INDEX */
+
+#bienvenida {
+  color: #393939;
+  text-decoration: none;
+  border-radius: 10px;
+  border-radius: 10px;
+  height: 300%;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 9%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1%;
+}
+#bienvenida h2,
+h3,
+h4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#comoFunciona {
+  color: #393939;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1%;
+  border-radius: 10px;
+  justify-content: center;
+  height: 300%;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 9%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#comoFunciona a {
+  color: black;
+}
+#comoFunciona a:hover {
+  background-color: white;
+  color: #901572;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+#comoFunciona h2,
+h3,
+h4 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* INICIO SESIÓN */
+#inicioSesion {
+  box-shadow: 0px 10px 10px rgb(163, 162, 162);
+  padding: 10%;
+  color: #393939;
+}
+#enlaceRegistro {
+  color: #393939;
+}
+#botonContraseña {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 5px;
+  margin-left: 5%;
+  background-color: #901572;
+  cursor: pointer;
+}
+#botonContraseña:hover {
+  background-color: white;
+  color: #901572;
+}
+/* PERFIL */
+
+#mainPerfil {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: space-between;
+}
+#mainPerfil a {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 5px;
+  margin-left: 5%;
+  background-color: #901572;
+  cursor: pointer;
+}
+#mainPerfil a:hover {
+  background-color: white;
+  color: #901572;
+}
+#datosUsuario {
+  box-shadow: 0px 10px 10px rgb(163, 162, 162);
+  color: #393939;
+  font-size: 15pt;
+  width: 32%;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#datosModificar {
+  box-shadow: 0px 10px 10px rgb(163, 162, 162);
+  color: #393939;
+  font-size: 15pt;
+  width: 32%;
+  border-radius: 10px;
+  height: 350px;
+  margin-top: 20px;
+}
+
+#datosUsuario ul {
+  list-style: none;
+}
+#datosModificar ul {
+  list-style: none;
+}
+#botonModif a {
+  margin-left: 40px;
+}
+#eliminarPerfil {
+  box-shadow: 0px 10px 10px rgb(163, 162, 162);
+  color: #393939;
+  font-size: 15pt;
+  border-radius: 10px;
+  width: 32%;
+  height: 350px;
+  margin-top: 20px;
+}
+#eliminarPerfil p {
+  width: 90%;
+}
+#eliminarPerfil ul {
+  list-style: none;
+}
+#botonElim a {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 5px;
+  margin-left: 5%;
+  background-color: #901572;
+  cursor: pointer;
+  margin-left: 40px;
+}
+#botonElim a:hover {
+  background-color: white;
+  color: #901572;
+}
+/* REGISTRO */
+#mainRegistro {
+  box-shadow: 0px 10px 10px rgb(163, 162, 162);
+  padding: 2%;
+  color: #393939;
+}
+#tituloRegistro {
+  margin-left: 35%;
+}
+#tituloRegistro h2 {
+  margin-top: 0px;
+}
+
+#altaBoton {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 15px;
+  margin-left: 15%;
+  background-color: #901572;
+  cursor: pointer;
+}
+#altaBoton:hover {
+  background-color: white;
+  color: #901572;
+}
+
+/* MATRICULA */
+#tablonAsignaturas {
+  justify-content: center;
+}
+#tablonAsignaturas a {
+  margin-top: 5%;
+  border: 1px;
+  border-radius: 10px;
+  justify-content: right;
+  box-shadow: 0px 0px 5px 1px black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  margin: 15px;
+  margin-left: 15%;
+  background-color: #901572;
+  cursor: pointer;
+}
+#tablonAsignaturas a:hover {
+  background-color: white;
+  color: #901572;
+}
+
+/* FOOTER */
+
+#shareNDfollow {
+  margin-right: 100px;
+  color: #393939;
+}
+
+#divImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgSF img {
+  height: 50px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 800px) {
+  #datosUsuario {
+    width: 90%;
+  }
+  #datosModificar {
+    width: 90%;
+  }
+  #eliminarPerfil {
+    width: 90%;
+  }
+  #inicioSesion {
+    display: flex;
+    flex-direction: column;
+  }
+  #mainRegistro {
+    display: flex;
+    flex-direction: column;
+  }
+}
